@@ -65,8 +65,8 @@ export default function WithSubnavigation() {
         >
           <Link href="/">
             <Image
-              style={{ width: "50px", height: "50px" }}
-              src={"../picture/TGM.png"}
+              style={{ width: "45px", height: "50px" }}
+              src={"../picture/W3PPLOGO.png"}
             />
           </Link>
 
@@ -81,28 +81,33 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href={"#"}
-          >
-            로그인
-          </Button>
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"blue.400"}
-            href={"#"}
-            _hover={{
-              bg: "blue.300",
-            }}
-          >
-            회원가입
-          </Button>
+          <Link>
+            <Button
+              as={"a"}
+              fontSize={"sm"}
+              fontWeight={400}
+              variant={"link"}
+              href={"./signin"}
+              marginTop={"10px"}
+            >
+              로그인
+            </Button>
+          </Link>
+
+          <Link href={"./signup"}>
+            <Button
+              display={{ base: "none", md: "inline-flex" }}
+              fontSize={"sm"}
+              fontWeight={600}
+              color={"white"}
+              bg={"blue.400"}
+              _hover={{
+                bg: "blue.300",
+              }}
+            >
+              회원가입
+            </Button>
+          </Link>
         </Stack>
       </Flex>
 

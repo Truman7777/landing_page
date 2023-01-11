@@ -80,8 +80,8 @@ export default function SmallCentered() {
         marginBottom={"0px"}
       >
         <Image
-          src={"../picture/TGM.png"}
-          style={{ width: "50px", height: "50px" }}
+          src={"../picture/W3PPLOGO_2.png"}
+          style={{ width: "90px", height: "100px" }}
         />
         <Stack direction={"row"} spacing={6}>
           <Link href={"#"}>조율해다오 소개</Link>
