@@ -56,7 +56,7 @@ export default function SplitScreen() {
         <Image
           alt={"Login Image"}
           objectFit={"cover"}
-          src={"../picture/W3PP.jpg"}
+          src={"../picture/teamProject-hero.jpg"}
           // height={"110vh"}
           // style={{ width: "1000px", height: "1000px" }}
         />
