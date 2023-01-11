@@ -5,21 +5,17 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Introduce from "./Introduce";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home";
+import Middle from "./Middle";
+import End from "./End";
 
-function App() {
+function Home() {
   return (
     <ChakraProvider>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />}></Route>
-          <Route path="/introduce" element={<Home />}></Route>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <Introduce />
+      <Middle />
+      <End />
     </ChakraProvider>
   );
 }
 
-export default App;
+export default Home;

@@ -77,6 +77,7 @@ export default function SmallCentered() {
         spacing={4}
         justify={"center"}
         align={"center"}
+        marginBottom={"0px"}
       >
         <Image
           src={"../picture/TGM.png"}
@@ -112,7 +113,10 @@ export default function SmallCentered() {
             <SocialButton label={"YouTube"} href={"#"}>
               <FaYoutube />
             </SocialButton>
-            <SocialButton label={"Instagram"} href={"#"}>
+            <SocialButton
+              label={"Instagram"}
+              href={"https://www.instagram.com/sooyaaa__/"}
+            >
               <FaInstagram />
             </SocialButton>
           </Stack>

@@ -39,7 +39,10 @@ export default function WithSubnavigation() {
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
         padding={"0 170px 0 170px"}
+        width={"100%"}
         height={"80px"}
+        position={"fixed"}
+        zIndex={"9999"}
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -60,10 +63,12 @@ export default function WithSubnavigation() {
           flex={{ base: 1 }}
           justify={{ base: "center", md: "start" }}
         >
-          <Image
-            style={{ width: "50px", height: "50px" }}
-            src={"../picture/TGM.png"}
-          />
+          <Link href="/">
+            <Image
+              style={{ width: "50px", height: "50px" }}
+              src={"../picture/TGM.png"}
+            />
+          </Link>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -271,6 +276,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "조율해다오 소개",
+    href: "./introduce",
   },
   {
     label: "자주 묻는 질문",
