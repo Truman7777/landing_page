@@ -66,7 +66,7 @@ export default function WithSubnavigation() {
           <Link href="/">
             <Image
               style={{ width: "45px", height: "50px" }}
-              src={"../picture/W3PPLOGO.png"}
+              src={"../picture/W3PPLOGO_2.png"}
             />
           </Link>
 

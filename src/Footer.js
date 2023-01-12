@@ -80,7 +80,7 @@ export default function SmallCentered() {
         marginBottom={"0px"}
       >
         <Image
-          src={"../picture/W3PPLOGO_2.png"}
+          src={"../picture/W3PPLOGO.png"}
           style={{ width: "90px", height: "100px" }}
         />
         <Stack direction={"row"} spacing={6}>
