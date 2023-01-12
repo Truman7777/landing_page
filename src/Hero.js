@@ -6,6 +6,7 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  Link,
 } from "@chakra-ui/react";
 
 export default function SplitScreen() {
@@ -39,16 +40,18 @@ export default function SplitScreen() {
             조율해다오를 사용해주세요.
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-            <Button
-              rounded={"full"}
-              bg={"blue.400"}
-              color={"white"}
-              _hover={{
-                bg: "blue.500",
-              }}
-            >
-              프로젝트 시작하기
-            </Button>
+            <Link href={"https://vercel-1-liart.vercel.app/"}>
+              <Button
+                rounded={"full"}
+                bg={"blue.400"}
+                color={"white"}
+                _hover={{
+                  bg: "blue.500",
+                }}
+              >
+                프로젝트 시작하기
+              </Button>
+            </Link>
           </Stack>
         </Stack>
       </Flex>
